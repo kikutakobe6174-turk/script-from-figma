@@ -7,7 +7,7 @@ export default function Home() {
 
   return (
     <div style={{ padding: 40 }}>
-      <p className = "text-[40px]">Figma to Script</p>
+      <p className = "text-[40px]">Figma to JSON</p>
       <h1>FigmaからJson形式の構造体で出します</h1>
       <button
        className = "bg-black text-white bg-primary text-on-primary px-30 py-6 rounded-lg font-body-md text-body-md font-bold transition-transform active:scale-95"
