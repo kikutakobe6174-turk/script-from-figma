@@ -1,6 +1,6 @@
 "use client";
-
-import { useState } from "react";
+import Link from "next/link";
+import { useState, React } from "react";
 import JsonViewer from "../component/JsonViewer"
 
 export default function FilePage() {
@@ -42,9 +42,15 @@ export default function FilePage() {
       <button
        className = "bg-black text-white bg-primary text-on-primary px-6 py-2 rounded-lg font-body-md text-body-md font-bold transition-transform active:scale-95" 
        onClick={handleSubmit}
-      >取得</button>
+      >
+        取得
+      </button>
 
       {result && <JsonViewer data={result} />}
+      <div>
+        <Link href="/file/usage" className="underline">ファイルキーがわからない方はこちら</Link>
+      </div>
+      
     </div>
   );
 }
